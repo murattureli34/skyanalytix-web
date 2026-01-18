@@ -1,0 +1,27 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skypulse-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(10, 15)">
+    <path d="M20 5L10 0L0 5C0 5 0 15 10 25C20 15 20 5 20 5Z" 
+          fill="url(#skypulse-gradient)" opacity="0.15"/>
+    <path d="M20 5L10 0L0 5C0 5 0 15 10 25C20 15 20 5 20 5Z" 
+          stroke="url(#skypulse-gradient)" 
+          stroke-width="1.5" 
+          fill="none"/>
+    <path d="M3 12L6 12L8 8L10 16L12 10L14 12L17 12" 
+          stroke="url(#skypulse-gradient)" 
+          stroke-width="2.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          fill="none"/>
+  </g>
+  
+  <text x="45" y="38" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#0F172A">
+    Sky<tspan fill="url(#skypulse-gradient)">Pulse</tspan>
+  </text>
+</svg>

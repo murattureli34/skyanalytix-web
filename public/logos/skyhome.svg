@@ -1,0 +1,27 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyhome-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38BDF8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(10, 12)">
+    <path d="M10 2L2 8V22H6V14H14V22H18V8L10 2Z" 
+          fill="url(#skyhome-gradient)" opacity="0.15"/>
+    <path d="M10 2L2 8V22H6V14H14V22H18V8L10 2Z" 
+          stroke="url(#skyhome-gradient)" 
+          stroke-width="1.8" 
+          stroke-linejoin="round"
+          fill="none"/>
+    <path d="M2 26C2 26 4 24 6 26C8 28 10 24 12 26C14 28 16 26 18 26" 
+          stroke="url(#skyhome-gradient)" 
+          stroke-width="2" 
+          stroke-linecap="round"
+          fill="none"/>
+  </g>
+  
+  <text x="45" y="38" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#0F172A">
+    Sky<tspan fill="url(#skyhome-gradient)">Home</tspan>
+  </text>
+</svg>

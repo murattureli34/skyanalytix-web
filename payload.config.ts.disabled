@@ -1,0 +1,235 @@
+import { buildConfig } from 'payload/config'
+import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+export default buildConfig({
+  admin: {
+    user: 'users',
+    importMap: {
+      baseDir: path.resolve(dirname),
+    },
+  },
+  collections: [
+    // Products Collection
+    {
+      slug: 'products',
+      admin: {
+        useAsTitle: 'name',
+      },
+      fields: [
+        {
+          name: 'name',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'slug',
+          type: 'text',
+          required: true,
+          unique: true,
+          admin: {
+            description: 'URL-friendly identifier (e.g., skypulse, skyhome)',
+          },
+        },
+        {
+          name: 'tagline',
+          type: 'group',
+          fields: [
+            {
+              name: 'en',
+              type: 'text',
+              required: true,
+              label: 'Tagline (English)',
+            },
+            {
+              name: 'fr',
+              type: 'text',
+              required: true,
+              label: 'Tagline (French)',
+            },
+          ],
+        },
+        {
+          name: 'description',
+          type: 'group',
+          fields: [
+            {
+              name: 'en',
+              type: 'richText',
+              required: true,
+              label: 'Description (English)',
+            },
+            {
+              name: 'fr',
+              type: 'richText',
+              required: true,
+              label: 'Description (French)',
+            },
+          ],
+        },
+        {
+          name: 'icon',
+          type: 'text',
+          admin: {
+            description: 'Icon name (e.g., pulse, home, cloud)',
+          },
+        },
+        {
+          name: 'color',
+          type: 'text',
+          admin: {
+            description: 'Brand color (hex code)',
+          },
+        },
+        {
+          name: 'logo',
+          type: 'text',
+          admin: {
+            description: 'Logo path (e.g., /logos/skypulse.svg)',
+          },
+        },
+        {
+          name: 'features',
+          type: 'array',
+          fields: [
+            {
+              name: 'title',
+              type: 'group',
+              fields: [
+                {
+                  name: 'en',
+                  type: 'text',
+                  label: 'Title (English)',
+                },
+                {
+                  name: 'fr',
+                  type: 'text',
+                  label: 'Title (French)',
+                },
+              ],
+            },
+            {
+              name: 'description',
+              type: 'group',
+              fields: [
+                {
+                  name: 'en',
+                  type: 'richText',
+                  label: 'Description (English)',
+                },
+                {
+                  name: 'fr',
+                  type: 'richText',
+                  label: 'Description (French)',
+                },
+              ],
+            },
+            {
+              name: 'icon',
+              type: 'text',
+              label: 'Icon name',
+            },
+          ],
+        },
+        {
+          name: 'published',
+          type: 'checkbox',
+          defaultValue: true,
+          admin: {
+            description: 'Show this product on the website',
+          },
+        },
+      ],
+    },
+    
+    // Site Settings Collection
+    {
+      slug: 'site-settings',
+      admin: {
+        useAsTitle: 'site_name',
+      },
+      fields: [
+        {
+          name: 'site_name',
+          type: 'text',
+          required: true,
+          defaultValue: 'SkyAnalytix',
+        },
+        {
+          name: 'tagline',
+          type: 'group',
+          fields: [
+            {
+              name: 'en',
+              type: 'text',
+              label: 'Tagline (English)',
+            },
+            {
+              name: 'fr',
+              type: 'text',
+              label: 'Tagline (French)',
+            },
+          ],
+        },
+        {
+          name: 'contact_email',
+          type: 'email',
+          required: true,
+        },
+        {
+          name: 'maintenance_mode',
+          type: 'checkbox',
+          defaultValue: false,
+          admin: {
+            description: 'Enable maintenance mode for the website',
+          },
+        },
+      ],
+    },
+    
+    // Users Collection (Admin Authentication)
+    {
+      slug: 'users',
+      auth: true,
+      admin: {
+        useAsTitle: 'email',
+      },
+      fields: [
+        {
+          name: 'name',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'role',
+          type: 'select',
+          required: true,
+          defaultValue: 'editor',
+          options: [
+            {
+              label: 'Admin',
+              value: 'admin',
+            },
+            {
+              label: 'Editor',
+              value: 'editor',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  editor: lexicalEditor({}),
+  secret: process.env.PAYLOAD_SECRET || 'your-secret-key-here',
+  typescript: {
+    outputFile: path.resolve(dirname, 'payload-types.ts'),
+  },
+  db: mongooseAdapter({
+    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/skyanalytix',
+  }),
+})

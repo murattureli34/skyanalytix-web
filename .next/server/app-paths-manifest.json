@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/[locale]/about/page": "app/[locale]/about/page.js",
+  "/[locale]/contact/page": "app/[locale]/contact/page.js",
+  "/[locale]/customers/page": "app/[locale]/customers/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/pricing/page": "app/[locale]/pricing/page.js",
+  "/[locale]/solutions/eldercare/page": "app/[locale]/solutions/eldercare/page.js",
+  "/[locale]/solutions/factory/page": "app/[locale]/solutions/factory/page.js",
+  "/[locale]/solutions/retail/page": "app/[locale]/solutions/retail/page.js",
+  "/[locale]/solutions/smarthome/page": "app/[locale]/solutions/smarthome/page.js",
+  "/[locale]/terms/page": "app/[locale]/terms/page.js"
+}

@@ -1,0 +1,65 @@
+LARGE PAGE FILES
+================
+
+Due to file size limitations, the following page files should be created manually
+by copying from previous messages or using the code blocks:
+
+REQUIRED PAGES:
+---------------
+
+1. src/app/[locale]/page.tsx (Home Page)
+   - Hero section with trust badges
+   - How It Works (3 steps)
+   - Benefits (Proactive Security + Operational Insights)
+   - ~300 lines
+
+2. src/app/[locale]/about/page.tsx (About Page)
+   - Complete about page with mission, beliefs
+   - ~400 lines
+
+3. src/app/[locale]/solutions/retail/page.tsx (Retail Solution)
+   - Full retail page with POS integrations
+   - ~500 lines
+
+4. src/app/[locale]/solutions/eldercare/page.tsx (ElderCare Solution)
+   - Complete eldercare solution page
+   - ~400 lines
+
+5. src/app/[locale]/solutions/factory/page.tsx (Factory - Coming Soon)
+   - Simple skeleton page
+   - ~50 lines
+
+6. src/app/[locale]/solutions/smarthome/page.tsx (SmartHome - Coming Soon)
+   - Simple skeleton page  
+   - ~50 lines
+
+7. src/app/[locale]/terms/page.tsx (Terms Page)
+   - Basic terms page
+   - ~100 lines
+
+TRANSLATIONS:
+-------------
+
+8. src/messages/en.json
+   - All English translations
+   - ~800 lines
+
+9. src/messages/fr.json
+   - All French translations
+   - ~800 lines
+
+SOLUTION:
+---------
+These files will be provided in PART 3 ZIP or as separate code blocks.
+You can also reference previous messages in this conversation where
+complete code for each page was provided.
+
+For now, focus on:
+1. Installing Part 1 (Logos + Layout fix)
+2. Setting up Payload CMS 3.0 (this package)
+3. Then add pages from Part 3
+
+Total deployment can be done in 3 stages:
+- Stage 1: Logos + Header fix (Part 1) ✅
+- Stage 2: Payload CMS setup (Part 2 - this) ⏳
+- Stage 3: Pages + Translations (Part 3) ⏳

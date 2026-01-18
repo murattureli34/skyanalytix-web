@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/animations.css';
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-gray-900;
+}

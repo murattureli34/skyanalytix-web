@@ -1,0 +1,30 @@
+{
+  "nav.home": "Accueil",
+  "nav.solutions": "Solutions",
+  "nav.retail": "Détail",
+  "nav.eldercare": "Soins aux aînés",
+  "nav.factory": "Usine",
+  "nav.smarthome": "Maison intelligente",
+  "nav.about": "À propos",
+  "nav.contact": "Contact",
+  "nav.pricing": "Tarifs",
+
+  "hero.title": "Sécurité et intelligence opérationnelle propulsées par l’IA",
+  "hero.subtitle": "Transformez vos caméras en informations exploitables : dissuasion, alertes et performance — confidentialité d’abord.",
+  "hero.ctaPrimary": "Réserver une démo",
+  "hero.ctaSecondary": "Voir la solution Détail",
+
+  "section.how.title": "Comment ça marche",
+  "section.how.step1": "Connecter les caméras",
+  "section.how.step2": "Détecter et alerter",
+  "section.how.step3": "Analyser les insights",
+
+  "section.benefits.title": "Ce que vous obtenez",
+  "benefit.security": "Alertes de sécurité proactives",
+  "benefit.insights": "Insights opérationnels et cartes de chaleur",
+  "benefit.privacy": "Confidentialité (options edge/floutage)",
+
+  "footer.rights": "Tous droits réservés.",
+
+  "comingSoon": "Bientôt disponible"
+}

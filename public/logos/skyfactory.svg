@@ -1,0 +1,22 @@
+<svg width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyfactory-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0284C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(10, 15)">
+    <circle cx="12" cy="12" r="5" fill="url(#skyfactory-gradient)" opacity="0.15"/>
+    <circle cx="12" cy="12" r="5" stroke="url(#skyfactory-gradient)" stroke-width="1.8" fill="none"/>
+    <circle cx="12" cy="12" r="2.5" fill="url(#skyfactory-gradient)"/>
+    <rect x="11" y="3" width="2" height="3" fill="url(#skyfactory-gradient)" rx="0.5"/>
+    <rect x="11" y="18" width="2" height="3" fill="url(#skyfactory-gradient)" rx="0.5"/>
+    <rect x="3" y="11" width="3" height="2" fill="url(#skyfactory-gradient)" rx="0.5"/>
+    <rect x="18" y="11" width="3" height="2" fill="url(#skyfactory-gradient)" rx="0.5"/>
+  </g>
+  
+  <text x="45" y="38" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700" fill="#0F172A">
+    Sky<tspan fill="url(#skyfactory-gradient)">Factory</tspan>
+  </text>
+</svg>

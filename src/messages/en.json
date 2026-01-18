@@ -1,0 +1,30 @@
+{
+  "nav.home": "Home",
+  "nav.solutions": "Solutions",
+  "nav.retail": "Retail",
+  "nav.eldercare": "ElderCare",
+  "nav.factory": "Factory",
+  "nav.smarthome": "Smart Home",
+  "nav.about": "About",
+  "nav.contact": "Contact",
+  "nav.pricing": "Pricing",
+
+  "hero.title": "AI-Powered Security & Operational Intelligence",
+  "hero.subtitle": "Turn cameras into actionable insights: deter theft, reduce incidents, and improve store performance — privacy-first.",
+  "hero.ctaPrimary": "Book a demo",
+  "hero.ctaSecondary": "Explore Retail",
+
+  "section.how.title": "How it works",
+  "section.how.step1": "Connect cameras",
+  "section.how.step2": "Detect and alert",
+  "section.how.step3": "Review insights",
+
+  "section.benefits.title": "What you get",
+  "benefit.security": "Proactive security alerts",
+  "benefit.insights": "Operational insights & heatmaps",
+  "benefit.privacy": "Privacy-first (blur/edge options)",
+
+  "footer.rights": "All rights reserved.",
+
+  "comingSoon": "Coming soon"
+}
